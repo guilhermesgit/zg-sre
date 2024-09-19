@@ -109,6 +109,22 @@ kubeclt edit configmap prometheus-server
 kubectl rollout restart deployment  prometheus-server -n default
 ```
 
+## Configurando o AutoScalling da aplicação
+Para habilitar enable: true
+```
+cd app/chart
+values.yaml
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 2
+  #targetCPUUtilizationPercentage: 80
+  #targetMemoryUtilizationPercentage: 80
+
+```
+
+
 
 ## Arquitetura atual do app-ps-sre Kubernetes
 
