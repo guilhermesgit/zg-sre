@@ -93,6 +93,8 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 helm repo update
 helm install pg-exporter prometheus-community/prometheus-postgres-exporter
 helm show values prometheus-community/prometheus-postgres-exporter > values-prometheus.yaml
+helm upgrade pg-exporter prometheus-community/prometheus-postgres-exporter  -f values-prometheus.yam
+
 ```
 ## Configuração de exemplo do exporter
 
