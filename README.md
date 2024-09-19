@@ -49,8 +49,8 @@ watch "kubectl top nodes"
 max_connections = 100                   # (change requires restart)
 
 ```
-sed -i 's/max_connections = 100/max_connections = 900/' /etc/postgresql/13/main/postgresql.conf
-/etc/init.d/postgresql restart
+$ sed -i 's/max_connections = 100/max_connections = 900/' /etc/postgresql/13/main/postgresql.conf
+$ /etc/init.d/postgresql restart
 
 ```
 
