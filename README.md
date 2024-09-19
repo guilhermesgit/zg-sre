@@ -1,4 +1,5 @@
-## Investigação: Levantamento dos requisitos
+## Kubernetes app-ps-sre single node.
+
 
 #### Nome da aplicação: app-ps-sre
 #### Namespace de trabalho: zgservicos
