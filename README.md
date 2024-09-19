@@ -44,7 +44,16 @@ watch "kubectl top nodes"
 1. Pod não estava disponível a aplicação estava com erro Bad Gateway 502
 2. Foi removido o request e limit do resource do deployment a aplicação se estabiliazar e usar kubeclt top para encontrar o consumo.
 3. Foi removido o livenessProbe e readinessProbe porque o healthcheck não estava encontrando o endoint de health.
-4. Problemas no PostgreSQL : FATAL: sorry, too many clients already alteração no postgresql.conf max_connections = 200
+4. Problemas no PostgreSQL : FATAL: sorry, too many clients already alteração no postgresql.conf 
+
+max_connections = 100                   # (change requires restart)
+
+```
+sed -i 's/max_connections = 100/max_connections = 900/' /etc/postgresql/13/main/postgresql.conf
+/etc/init.d/postgresql restart
+
+```
+
 
 ## Instalando ferramentas de monitoramento
 Configurar no servidor para usar o helm:
