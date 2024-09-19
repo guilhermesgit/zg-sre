@@ -10,6 +10,13 @@ CPU:  2
 
 Memória:  8 GB
 
+Logando no servidor:
+
+```
+ ssh -i suachaveprivada debian@$IPdoServidor
+
+```
+
 ## Analisando os logs do pods independente no nome
 
 ```
@@ -40,7 +47,7 @@ watch "kubectl top nodes"
 4. Problemas no PostgreSQL : FATAL: sorry, too many clients already alteração no postgresql.conf max_connections = 200
 
 ## Instalando ferramentas de monitoramento
-Configurar no servidor:
+Configurar no servidor para usar o helm:
 
 ```
 export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
