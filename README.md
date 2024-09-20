@@ -135,4 +135,4 @@ autoscaling:
 
 ## Sugestão de melhoria de arquitetura utilizando AWS.
 
-![screenshot](img/eks.pngt.png)
+![screenshot](img/eks.png)
