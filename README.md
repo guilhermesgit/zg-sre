@@ -133,3 +133,6 @@ autoscaling:
 * Banco de dados postgreSQL com ip público e porta aberta para o mundo.
 
 
+## Sugestão de melhoria de arquitetura utilizando AWS.
+
+![screenshot](img/eks.pngt.png)
